@@ -1,0 +1,73 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Monserrat', sans-serif;
+}
+
+/* Container pour toute la page */
+.container-fluid {
+  display: flex;
+  height: 100vh; /* La hauteur occupe toute la fenêtre */
+}
+
+/* Section du chatbot */
+.chat-container {
+  flex: 1; /* Prend la moitié de la largeur */
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Section de l'image à droite */
+.image-container {
+  flex: 1; /* Prend l'autre moitié de la largeur */
+  background-image: url('assets/bot1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+/* Card du chatbot */
+.card {
+  border-radius: 10px;
+}
+
+/* Styles pour les messages */
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  margin-left: 20%;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+  color: #333;
+  margin-right: 20%;
+}
+
+.card-footer {
+  padding: 10px;
+}
+
+.input-group input {
+  width: 80%;
+  border-radius: 5px;
+}
+
+.input-group button {
+  width: 20%;
+  border-radius: 5px;
+}
+
+
+.suggestion-btn {
+  cursor: pointer;
+}
